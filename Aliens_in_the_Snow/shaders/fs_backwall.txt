@@ -1,0 +1,36 @@
+#version 330 core
+
+in vec3 aPos;
+in vec3 aNormal;
+in vec2 aTexCoord;
+in vec2 movingTexCoord1, movingTexCoord2, movingTexCoord3;
+
+out vec4 fragColor;
+
+uniform sampler2D first_texture;
+uniform sampler2D second_texture;
+uniform vec3 viewPos;
+
+uniform int lightOn;
+
+void main() {
+  vec3 norm = normalize(aNormal);
+  vec3 viewDir = normalize(viewPos - aPos);
+
+  vec3 result = vec3(0.0);
+
+  if(lightOn == 1){
+    vec4 temp = mix(texture(first_texture, aTexCoord),
+                  texture(second_texture, movingTexCoord1),
+                  0.5f);
+    temp = mix(temp, texture(second_texture, movingTexCoord2), 0.3f);
+    temp = mix(temp, texture(second_texture, movingTexCoord3), 0.1f);
+  
+    fragColor = vec4(temp.rgb, 1.0f);
+}
+else if(lightOn == 0){
+    result = vec3(0.0);
+
+    fragColor = vec4(result, 1.0);
+}
+}
