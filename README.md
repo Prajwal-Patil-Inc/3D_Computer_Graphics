@@ -16,9 +16,10 @@ Following needs to be installed before running the program:
 Simply click and execute the Alien.bat file to run.
 OR
 Compile and run the Java application to view the 3D scene using:
-    ```java
-    javac Alien.java
-    java Alien
+```java
+javac Alien.java
+java Alien
+```
 
 ## Features
 - Two alien models made using spheres.
