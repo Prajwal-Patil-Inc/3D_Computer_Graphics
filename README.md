@@ -1,7 +1,8 @@
 # Aliens in the snow!
 ## 3D Scene with Alien models, rotating spotlight and snowing backdrop made in JOGL
 
-## Link to video demonstration: https://youtu.be/RbSobcbRHb8
+## Link to video demonstration: 
+[![Watch the video](https://img.youtube.com/vi/Yb9kVChLPtk/maxresdefault.jpg)](https://youtu.be/RbSobcbRHb8)
 
 ## Overview
 This project showcases a 3D scene featuring two alien models made using spheres, a spotlight that rotates around a set angle, and two backdrop planes (vertical and horizontal). This scene was created using JOGL (Java binding for the OpenGL graphics API).
