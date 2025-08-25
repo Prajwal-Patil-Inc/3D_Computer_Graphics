@@ -2,7 +2,7 @@
 ## 3D Scene with Alien models, rotating spotlight and snowing backdrop made in JOGL
 
 ## Link to video demonstration: 
-![Demo](assets/demo.gif)
+![Demo](demo.gif)
 [![Watch the video]](https://youtu.be/RbSobcbRHb8)
 
 ## Overview
